@@ -1,12 +1,13 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
  * main - Entry point
  *
- * Description: print all possible different combinations of two digits.
+ * Description: Print all possible different combination of two digits.
  *
- * Retur: Always 0 (Success)
+ * Return: Always 0 (Success)
 */
+
 int main(void)
 {
 	int digit1 = 0, digit2;
