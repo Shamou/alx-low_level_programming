@@ -15,20 +15,19 @@ void times_table(void)
 
 	for (num = 0; num <= 9; num++)
 	{
-		_putchar(',');
-		_putchar(' ');
-
-		prod = num * mult;
-
-		/**
-		 * put space if product is a single number
-		 * place the first digit if its two numbers
-		*/
-		if (prod <= 9)
+		_putchar(48);
+		for (mult = 0; mult <= 9; mult++)
+		{
+			_putchar(',');
 			_putchar(' ');
-		else
-			_putchar((prod / 10) + 48);
-		_putchar((prod % 10) % +48);
+
+			prod = num * mult;
+			if (prod <= 9)
+				_putchar(' ');
+			else
+				_putchar((prod / 10) + 48);
+			_putchar((prod % 10) % +48);
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
