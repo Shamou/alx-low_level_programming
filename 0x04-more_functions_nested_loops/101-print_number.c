@@ -8,23 +8,23 @@
 
 void print_number(int n)
 {
-	unsigned int num;
+	unsigned int n1;
 
 	/*first check if its negative*/
 	if (n < 0)
 	{
-		num = -n;
-		_putcher('-');
+		n1 = -n;
+		_putchar('-');
 	}
 	else
 	{
-		num = n;
+		n1 = n;
 	}
 
 	/*print the first few digit*/
-	if (num / 10)
-		print_number(num / 10);
+	if (n1 / 10)
+		print_number(n1 / 10);
 
 	/*print the last digit*/
-	_putchar((num % 10) + '0');
+	_putchar((n1 % 10) + '0');
 }
