@@ -42,7 +42,7 @@ int is_palindrome(char *s)
 int check(char *s, int start, int end, int mod)
 {
 
-	if ((srart == end && mood != 0) || (start == end + 1 && mod == 0))
+	if ((start == end && mod != 0) || (start == end + 1 && mod == 0))
 		return (1);
 	else if (s[start] != s[end])
 		return (0);
