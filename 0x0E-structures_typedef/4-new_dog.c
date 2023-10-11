@@ -1,5 +1,5 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
 
 /**
  * _strlen - a function that gets a length of string
@@ -73,7 +73,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog->name);
 		free(dog);
 		return (NULL);
-	
 	}
 
 	dog->name = _strcopy(dog->name, name);
