@@ -2,7 +2,7 @@
 
 /**
  * format_char - formats character
- * @separator: the string separator
+ * @separator: the string separtor
  * @ap: argument pointer
 */
 void format_char(char *separator, va_list ap)
@@ -12,7 +12,7 @@ void format_char(char *separator, va_list ap)
 
 /**
  * format_int - formats integer
- * @separator: the string separator
+ * @separator: the string seprator
  * @ap: argument pointer
 */
 void format_int(char *separator, va_list ap)
@@ -64,7 +64,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(ap, format);
-	while (format && format)
+	while (format && format[i])
 	{
 		j = 0;
 		while (token[j].token)
